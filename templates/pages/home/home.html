@@ -1,0 +1,206 @@
+{% extends 'layouts/base.html' %}
+
+{% load static %}
+
+
+{% block content %}
+
+{% include 'pages/home/slider.html' %}
+
+
+
+<div class="container-fluid pb-5" style="background: #f7f7f7">
+  <div class="container-sm bg-primary "
+    style=" width: 90%; position: relative; z-index: 2; margin: -43px auto 0px auto;">
+    <div class="row p-5 col-md-12">
+      <div class="col-md-3 d-flex align-items-center justify-content-center">
+        <div class="p-2">
+          <i class="fa fa-university apply-addmission-icon fa-2x"></i>
+        </div>
+        <div class="pt-4 apply-addmission-text">
+          <h4>University Life</h4>
+          <p>Overall in here</p>
+        </div>
+      </div>
+      <div class="col-md-3 d-flex align-items-center justify-content-center">
+        <div class="p-2">
+          <i class="fa fa-graduation-cap apply-addmission-icon fa-2x"></i>
+        </div>
+        <div class="pt-4 apply-addmission-text">
+          <h4>Graduation</h4>
+          <p>Getting Degree</p>
+        </div>
+      </div>
+      <div class="col-md-3 d-flex align-items-center justify-content-center">
+        <div class="p-2">
+          <i class="fa-solid fa-futbol fa-2x"></i>
+        </div>
+        <div class="pt-4 apply-addmission-text">
+          <h4>Athletics</h4>
+          <p>Sport Clubs</p>
+        </div>
+      </div>
+      <div class="col-md-3 d-flex align-items-center justify-content-center">
+        <div class="p-2">
+          <i class="fa-solid fa-comments-dollar fa-2x"></i>
+        </div>
+        <div class="pt-4 apply-addmission-text">
+          <h4>Social</h4>
+          <p>Overall in here</p>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="row">
+        <div class="col-md-6" style="padding: 0px">
+          <img src="{% static 'image/graduates.jpg' %}" alt="" style="width: 100%; height: 100%; object-fit: cover" />
+        </div>
+
+        <div class="col-md-6 apply-admission-content-wrapper">
+          <div class="p-5 animation-element slide-bottom in-view">
+            <h2 style="color: #fff">Apply For Admission</h2>
+            <h4 style="color: #51be78">Lumbini Technological University</h4>
+
+            <p style="color: #0f0f0f; padding-top: 20px">
+              We don’t just give students an education and experiences that set
+              them up for success in a career. We help them succeed in their
+              career—to discover a field they’re passionate about and dare to
+              lead it.
+            </p>
+            <div style="padding-top: 20px" id="course-btn">
+              <a class="btn btn-info btn-block text-white" href="#">Apply Now <i
+                  class="fa-solid fa-angles-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- word from vice-chancellor -->
+  <section id="about-us" class="about-us-section home-secound home-third" style="padding: 125px">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <img width="100%" src="{% static 'image/prof1.jpg' %}" alt="" />
+          <div class="mt-2 text-center">
+            <h3>Prof. Dr. Binod Prasad Dhakal</h3>
+            <h6>Vice-chancellor of the Lumbini Technological University</h6>
+          </div>
+        </div>
+        <!-- /form -->
+        <div class="col-md-8">
+          <div class="about-us-text animation-element slide-right in-view">
+            <h2>Message from the Vice-chancellor</h2>
+            <div class="about-content-text">
+              <p>
+                Welcome to Lumbini Technological University! Here at LTU, we
+                believe that our top priority is to produce a highly skilled
+                workforce and technological entrepreneurs. At LTU, we are
+                planning on a different approach to education. Our focus will be
+                to transition from the traditional theoretical approach to the
+                modern practical and research-oriented approach in academics. In
+                recent times, higher education globally has witnessed a
+                significant change in approach. This has led to an increment in
+                the productivity and efficiency of the graduating students. At
+                LTU, your entrepreneurial enthusiasm will be respected and
+                nurtured. The faculty will encourage you to pursue your
+                ambitions by providing the r
+              </p>
+
+              <div class="about-btn">
+                <div style="padding-top: 20px" id="course-btn">
+                  <a class="btn btn-info btn-block text-white" href="#">ABOUT US <i
+                      class="fa-solid fa-angles-right"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {% include 'pages/home/status.html' %}
+
+  <section id="search-course" class="search-course-section search-course-third">
+    <div class="container">
+      <div class="search-counter-up">
+        <div class="version-four">
+          <div class="row">
+            <div class="col-lg-3 my-3">
+              <div class="counter-icon-number">
+                <div class="counter-icon">
+                  <i class="fa-solid fa-graduation-cap fa-2x"></i>
+
+                </div>
+                <div class="counter-number">
+                  <span class="counter-count bold-font">1000</span><span>+</span>
+                  <p>Students Enrolled</p>
+                </div>
+              </div>
+            </div>
+            <!-- /counter -->
+
+            <div class="col-lg-3 my-3">
+              <div class="counter-icon-number">
+                <div class="counter-icon">
+                  <!-- <i class="fa-solid fa-book-font"></i> -->
+                  <i class="fa-solid fa-book fa-2x"></i>
+                </div>
+                <div class="counter-number">
+                  <span class="counter-count bold-font">100</span><span>+</span>
+                  <p>Avaliable Courses</p>
+                </div>
+              </div>
+            </div>
+            <!-- /counter -->
+
+            <div class="col-lg-3 my-3">
+              <div class="counter-icon-number">
+                <div class="counter-icon">
+                  <i class="fa-regular fa-star fa-2x"></i>
+                </div>
+                <div class="counter-number">
+                  <span class="counter-count bold-font">550</span><span>+</span>
+                  <p>Avaliable project</p>
+                </div>
+              </div>
+            </div>
+            <!-- /counter -->
+
+            <div class="col-lg-3 my-3">
+              <div class="counter-icon-number">
+                <div class="counter-icon">
+                  <i class="fa-solid fa-user-group fa-2x"></i>
+                </div>
+                <div class="counter-number">
+                  <span class="counter-count bold-font">50</span><span>+</span>
+                  <p>Teachers Registered</p>
+                </div>
+              </div>
+            </div>
+            <!-- /counter -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+</div>
+</section> --> </div>
+</div>
+</div>
+
+
+      {% include 'pages/home/courses.html' %}
+      {% include 'pages/home/notice.html' %}
+      {% include 'pages/home/news&event.html' %}
+      {% include 'pages/home/faqs/faqs.html' %}
+
+
+
+    </div>
+    {% endblock content %}

@@ -1,0 +1,53 @@
+{% load static %}
+
+<section id="latest-area" class="latest-area-section">
+    <div class="container">
+        <div class="section-title mb20 headline text-center">
+            <span class="subtitle text-uppercase">Always Be Updated</span>
+            <h2> News &amp; Events</h2>
+        </div>
+        <div id="course-slide-item" class="course-slide owl-carousel owl-theme owl-loaded owl-responsive-1000">
+
+
+            <div class="owl-stage-outer">
+                <div class="owl-stage"
+                    style="transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s; width: 300px;">
+                    <div class="owl-item active" style="width: 270px; margin-right: 30px;">
+                        <div class="course-item-pic-text  animation-element slide-bottom in-view">
+                            <div class="course-pic relative-position mb25">
+                                <img src="{% static 'image/ltu_logo.png' %}" alt="">
+
+                                <div class="course-details-btn">
+                                    <a href="">NEWS DETAIL <i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                            <div class="course-item-text">
+                                <div class="course-meta">
+                                    <span class="course-category bold-font"><a href="">1</a></span>
+                                </div>
+                                <div class="course-title mt10 headline pb45 relative-position">
+                                    <h3><a href="">LTU Alumnus recognized as the best performing Engineer in the
+                                            Ministry</a>
+
+                                    </h3>
+                                </div>
+                                <div class="course-viewer ul-li">
+                                    <ul>
+                                        <li><a href=""><i class="fas fa-eye mr-3"></i>0</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="owl-controls">
+                <div class="owl-nav">
+                    <div class="owl-prev"><i class="fas fa-chevron-left"></i></div>
+                    <div class="owl-next"><i class="fas fa-chevron-right"></i></div>
+                </div>
+                <div class="owl-dots" style="display: none;"></div>
+            </div>
+        </div>
+    </div>
+</section>
